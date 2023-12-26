@@ -12,9 +12,6 @@ export default defineConfig({
 	build: {
 		rollupOptions: {
 			input: { ...pageInput },
-			// output: {
-			// 	dir: resolve(__dirname, './..'),
-			// },
 		},
 		sourcemap: true,
 	},
