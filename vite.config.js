@@ -24,4 +24,5 @@ export default defineConfig({
 		devSourcemap: true,
 	},
 	base: './',
+	publicDir: './public'
 })
