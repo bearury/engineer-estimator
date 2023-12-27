@@ -9,14 +9,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Smetana</title>
 		<script type="module" crossorigin src="./assets/index-LYZWRiwy.js"></script>
-		<link rel="stylesheet" crossorigin href="./assets/index-s8B3QnLv.css">
+		<link rel="stylesheet" crossorigin href="./assets/index-s8B3QnLv.css" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="header__container">
 				<nav class="header__navigation">
 					<div class="header__logo">
-						<img src="./assets/logo--5_R6dvK.png" alt="logo">
+						<img src="logo.png" alt="logo" />
 					</div>
 					<ul class="header__list">
 						<li class="header__item"><a href="#favorite" class="header__link">Курсы</a></li>
@@ -38,33 +38,65 @@
 					<div class="basic__block">
 						<div class="basic__center">
 							<div class="basic__image">
-								<img src="./assets/person-CXBbuuWv.png" alt="person">
+								<img src="./assets/person-CXBbuuWv.png" alt="person" />
 							</div>
 							<div class="basic__bg-wrapper">
 								<div class="basic__bg">
 									<div class="basic__bg-image">
-										<img class="basic__bg-ellipse" src="data:image/svg+xml,%3csvg%20width='302'%20height='356'%20viewBox='0%200%20302%20356'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_bf_131_22)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M150.185%204.28998C220.643%203.60908%20271.249%2068.4482%20291.013%20138.789C308.859%20202.301%20286.484%20268.942%20235.773%20308.899C181.457%20351.696%20106.582%20369.369%2051.7174%20327.336C-2.29854%20285.953%20-3.08653%20207.948%2017.1874%20141.435C38.0449%2073.0071%2081.1682%204.95696%20150.185%204.28998Z'%20fill='url(%23paint0_linear_131_22)'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_bf_131_22'%20x='0.960938'%20y='0.284668'%20width='300.127'%20height='355.046'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeGaussianBlur%20in='BackgroundImageFix'%20stdDeviation='2'/%3e%3cfeComposite%20in2='SourceAlpha'%20operator='in'%20result='effect1_backgroundBlur_131_22'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_backgroundBlur_131_22'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='2'%20result='effect2_foregroundBlur_131_22'/%3e%3c/filter%3e%3clinearGradient%20id='paint0_linear_131_22'%20x1='245.494'%20y1='50.306'%20x2='33.92'%20y2='313.471'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23485BFF'%20stop-opacity='0.36'/%3e%3cstop%20offset='1'%20stop-color='%23FF1669'%20stop-opacity='0.08'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="background-image">
-										<img class="basic__bg-helmet" src="data:image/png;base64,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" alt="helmet">		
+										<img
+											class="basic__bg-ellipse"
+											src="data:image/svg+xml,%3csvg%20width='302'%20height='356'%20viewBox='0%200%20302%20356'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_bf_131_22)'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M150.185%204.28998C220.643%203.60908%20271.249%2068.4482%20291.013%20138.789C308.859%20202.301%20286.484%20268.942%20235.773%20308.899C181.457%20351.696%20106.582%20369.369%2051.7174%20327.336C-2.29854%20285.953%20-3.08653%20207.948%2017.1874%20141.435C38.0449%2073.0071%2081.1682%204.95696%20150.185%204.28998Z'%20fill='url(%23paint0_linear_131_22)'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_bf_131_22'%20x='0.960938'%20y='0.284668'%20width='300.127'%20height='355.046'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeGaussianBlur%20in='BackgroundImageFix'%20stdDeviation='2'/%3e%3cfeComposite%20in2='SourceAlpha'%20operator='in'%20result='effect1_backgroundBlur_131_22'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='effect1_backgroundBlur_131_22'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='2'%20result='effect2_foregroundBlur_131_22'/%3e%3c/filter%3e%3clinearGradient%20id='paint0_linear_131_22'%20x1='245.494'%20y1='50.306'%20x2='33.92'%20y2='313.471'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23485BFF'%20stop-opacity='0.36'/%3e%3cstop%20offset='1'%20stop-color='%23FF1669'%20stop-opacity='0.08'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"
+											alt="background-image"
+										/>
+										<img
+											class="basic__bg-helmet"
+											src="data:image/png;base64,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"
+											alt="helmet"
+										/>
 									</div>
 									<div class="basic__bg-fon"></div>
 								</div>
 							</div>
 							<div class="basic__shadow"></div>
 						</div>
-						<div class="basic__center-btn">Вебинары
-							<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEYSURBVHgBvZY9TgJBGECfxlhZWNFoopWJnX+4iRXHMHoBKw9gA4mVNhaewIvYUFNxAEJCKIFQ0BH4viwbkmUG5meHl7xif7JvZ5KZXdjkUrxmT9yIY/GJPXArLsSZ+EJiiljhBwkpx9QmibgzxJIFbTH1l4q53xJT/8RjKmJXTO2INSrAJaZ2xQsicY2pPfIdJ5gHj1h00Dem9sU6AYTE1In4jCf1wFjhOx7Exqy7zZHh3AFu6LR9iqPV8VAckH8t5o7P4BH3ETTw4NDxPn37ieF8k0jKI+uRr6MvzKO7IoIM84KtWWI/RJBh3xn+DTH9XzklkAz7FtTAPLoWgZyLZ1uut0uhqfhNIl5ZT1+LiCl04UR8C4ksAb/ZxGGNzS0EAAAAAElFTkSuQmCC" alt="cursor">
+						<div class="basic__center-btn">
+							Вебинары
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEYSURBVHgBvZY9TgJBGECfxlhZWNFoopWJnX+4iRXHMHoBKw9gA4mVNhaewIvYUFNxAEJCKIFQ0BH4viwbkmUG5meHl7xif7JvZ5KZXdjkUrxmT9yIY/GJPXArLsSZ+EJiiljhBwkpx9QmibgzxJIFbTH1l4q53xJT/8RjKmJXTO2INSrAJaZ2xQsicY2pPfIdJ5gHj1h00Dem9sU6AYTE1In4jCf1wFjhOx7Exqy7zZHh3AFu6LR9iqPV8VAckH8t5o7P4BH3ETTw4NDxPn37ieF8k0jKI+uRr6MvzKO7IoIM84KtWWI/RJBh3xn+DTH9XzklkAz7FtTAPLoWgZyLZ1uut0uhqfhNIl5ZT1+LiCl04UR8C4ksAb/ZxGGNzS0EAAAAAElFTkSuQmCC"
+								alt="cursor"
+							/>
 						</div>
 						<div class="basic__center-btn">Школа сметного дела</div>
 						<div class="basic__center-btn">Online обучение</div>
 						<div class="basic__center-img basic__center-img_trangle">
-							<img src="./assets/triangle-ruler-xMS00S4N.png" alt="triangle">
+							<img src="./assets/triangle-ruler-xMS00S4N.png" alt="triangle" />
 						</div>
 						<div class="basic__center-img basic__center-img_pencil">
-							<img src="./assets/pen_pencil_write_edit_icon-cuxUABor.png" alt="pencil">
+							<img src="./assets/pen_pencil_write_edit_icon-cuxUABor.png" alt="pencil" />
 						</div>
 					</div>
 					<div class="basic__under">Запишись на бесплатный вебинар</div>
 					<button class="basic__btn">Записаться</button>
+				</div>
+			</section>
+			<section class="level">
+				<div class="level__container">
+					<div class="level__title"></div>
+					<div class="level__items">
+						<div class="item">
+							<div class="item__title">Сметное дело с 0</div>
+							<ul class="item__list">
+								<li class="list__item">Сайт рыбатекст поможет дизайнеру</li>
+								<li class="list__item">верстальщику, вебмастеру</li>
+								<li class="list__item">сгенерировать несколько абзацев более менее осмысленного</li>
+							</ul>
+							<div class="item__subtitle">
+								<div class="item__subtitle-title">Стоимость курса:</div>
+								<div class="item__subtitle-cost">10 000 ₽</div>
+							</div>
+							<button class="item__btn">Записаться</button>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>

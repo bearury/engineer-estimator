@@ -1,0 +1,84 @@
+.level {
+
+    // .lavel__container
+
+    &__container {
+    }
+
+    // .lavel__title
+
+    &__title {
+        @include font-upp-500(36, $col-text-dark);
+        span{
+            color: $col-base-blue;
+        }
+    }
+
+    // .lavel__items
+
+    &__items {
+        margin-top: 40px;
+        @include flex($fx-jf-sb, center);
+    }
+}
+.item {
+    padding: 50px 40px 35px 40px;
+    box-shadow: 0px 2px 80px 0px rgba(225, 225, 225, 0.78);
+    @include flex-col($fx-jf-sb, center);
+    background-color: $col-base-blue;
+
+    // .item__title
+
+    &__title {
+        @include font-upp-500(24, $col-text-light);
+    }
+
+    // .item__list
+
+    &__list {
+        margin-top: 28px;
+        min-height: 180px;
+    }
+
+    // .item__subtitle
+
+    &__subtitle {
+        margin-top: 25px;
+    }
+
+    // .item__subtitle-title
+
+    &__subtitle-title {
+    }
+
+    // .item__subtitle-cost
+
+    &__subtitle-cost {
+    }
+
+    // .item__btn
+
+    &__btn {
+        margin-top: 25px;
+        @include btn-white(222, 53, 18);
+        color: $col-base-blue;
+    }
+}
+.item:not(:first-child) {
+    background-color: rgba(0, 0, 0, 0.25);
+
+    &__btn {
+        color: $col-base-blue;
+    }
+}
+
+.list {
+
+    // .list__item
+
+    &__item {
+        @include font-400(18, $col-text-light);
+        list-style: disc;
+        text-align: start;
+    }
+}
