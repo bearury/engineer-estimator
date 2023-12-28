@@ -1,8 +1,10 @@
 .level {
+    margin-top: 160px;
 
     // .lavel__container
 
     &__container {
+
     }
 
     // .lavel__title
@@ -18,14 +20,19 @@
 
     &__items {
         margin-top: 40px;
-        @include flex($fx-jf-sb, center);
+        @include flex(center, center);
+        gap: 32px;
     }
 }
+
 .item {
-    padding: 50px 40px 35px 40px;
+    padding: 50px 30px 35px 50px;
     box-shadow: 0px 2px 80px 0px rgba(225, 225, 225, 0.78);
-    @include flex-col($fx-jf-sb, center);
-    background-color: $col-base-blue;
+    @include flex-col($fx-jf-sb, start);
+    background-color: $col-green-transparency;
+    border-radius: 20px;
+    max-width: 410px;
+    transition: all 0.5s ease 0s;
 
     // .item__title
 
@@ -38,12 +45,15 @@
     &__list {
         margin-top: 28px;
         min-height: 180px;
+        padding-left: 20px;
     }
 
     // .item__subtitle
 
     &__subtitle {
         margin-top: 25px;
+        @include font-400(24, $col-text-light);
+        text-align: start;
     }
 
     // .item__subtitle-title
@@ -54,31 +64,40 @@
     // .item__subtitle-cost
 
     &__subtitle-cost {
+        margin-top: 15px;
     }
 
     // .item__btn
 
     &__btn {
-        margin-top: 25px;
+        margin-top: 27px;
         @include btn-white(222, 53, 18);
-        color: $col-base-blue;
+        color: $col-green-transparency;
+        border-radius: 10px;
+        transition: all 0.5s ease 0s;
     }
 }
-.item:not(:first-child) {
-    background-color: rgba(0, 0, 0, 0.25);
 
-    &__btn {
-        color: $col-base-blue;
-    }
+
+
+
+.item:hover {
+    transition: all 0.5s ease 0s;
+    transform: scale(1.01);
+    background-color: $col-base-blue;
 }
+
+.item:hover > .item__btn {
+    transition: all 0.5s ease 0s;
+    color: $col-base-blue;
+}
+
 
 .list {
-
-    // .list__item
-
     &__item {
         @include font-400(18, $col-text-light);
         list-style: disc;
         text-align: start;
+        line-height: 25px;
     }
 }
