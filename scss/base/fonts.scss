@@ -1,29 +1,29 @@
 @font-face {
-    font-family: "Inter-400";
+    font-family: 'Inter-400';
     src: url('$fonts/Inter-Regular-400.ttf');
 }
 
 @font-face {
-    font-family: "Inter-600";
+    font-family: 'Inter-600';
     src: url('$fonts/Inter-SemiBold-600.ttf');
 }
 
 @font-face {
-    font-family: "Inter-500";
+    font-family: 'Inter-500';
     src: url('$fonts/Inter-Medium-500.ttf');
 }
 
-@mixin font-upp-500 ($font-size, $color) {
+@mixin font-upp-500($font-size, $color, $l-height: 120%) {
     font-family: Inter-500;
     color: $color;
     text-align: center;
     font-size: $font-size + px;
     font-style: normal;
-    line-height: 120.523%; /* 43.388px */
+    line-height: $l-height; /* 43.388px */
     text-transform: uppercase;
 }
 
-@mixin font-400 ($font-size, $color) {
+@mixin font-400($font-size, $color) {
     font-family: Inter-400;
     color: $color;
     text-align: center;
@@ -31,4 +31,3 @@
     font-style: normal;
     line-height: 100%;
 }
-
