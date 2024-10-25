@@ -11,6 +11,7 @@
 
 	&__title {
 		@include font-upp-500(36, $col-text-dark);
+
 		span {
 			color: $col-base-blue;
 		}
@@ -20,6 +21,7 @@
 
 	&__subtitle {
 		@include font-400(20, $col-text-dark);
+
 		margin-top: 20px;
 	}
 
@@ -36,7 +38,9 @@
 
 	&__center {
 		position: relative;
+
 		@include flex(center, center);
+
 		transform: translateX(10px);
 	}
 
@@ -50,13 +54,15 @@
 		content: '';
 		position: absolute;
         border-radius: 16px;
-        box-shadow: 0px 2px 20px 0px rgba(202, 202, 202, 0.54);
+        box-shadow: 0 2px 20px 0 rgb(202 202 202 / 54%);
 	}
 
 	&__center-btn:nth-child(2) {
         @include btn-white(235, 60, 20);
+
         top: 70px;
         left: 20%;
+
         img{
             content: '';
             position: absolute;
@@ -67,12 +73,14 @@
 
     &__center-btn:nth-child(3) {
         @include btn-white(274, 60, 20);
+
         bottom: 70px;
         left: 18%;
     }
 
     &__center-btn:nth-child(4) {
         @include btn-white(200, 60, 20);
+
         top: 90px;
         left: 63%;
     }
@@ -80,10 +88,12 @@
     &__center-img {
         content: '';
         position: absolute;
+
         &_trangle {
             top: 15px;
             left: 50px;
         }   
+
         &_pencil {
             top: 60px;
             right: 0;
@@ -113,6 +123,7 @@
 		content: '';
 		position: absolute;
 		bottom: 0;
+
 		@include transformX;
 	}
 
@@ -120,7 +131,9 @@
 		content: '';
 		position: absolute;
 		bottom: 0;
+
 		@include transformX;
+
 		width: 250px;
 		height: 370px;
 		border-radius: 130px / 150px;
@@ -147,12 +160,13 @@
 		height: 34px;
 		flex-shrink: 0;
 		border-radius: 100%;
-		background: rgba(0, 0, 0, 0.1);
+		background: rgb(0 0 0 / 10%);
 		filter: blur(8.5px);
         content: '';
         position: absolute;
         bottom: 10px;
-        @include transformX();
+
+        @include transformX;
 
 	}
 
@@ -160,6 +174,7 @@
 
 	&__under {
 		@include font-400(22, rgba(0, 0, 0, 0.64));
+
 		margin-top: 10px;
 	}
 
@@ -167,6 +182,7 @@
 
 	&__btn {
 		@include btn-blue(325, 70, 30);
+
 		border-radius: 16px;
 		margin-top: 25px;
 	}

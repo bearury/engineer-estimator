@@ -4,6 +4,7 @@
 
 .title-middle{
     @include font-upp-500 (24, $col-base-blue);
+
     line-height: 29px;
     text-transform: uppercase;
 }

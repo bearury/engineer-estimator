@@ -1,18 +1,20 @@
 $mq-phone: 'phone';
 $mq-tablet: 'tablet';
 $mq-desktop: 'desktop';
-
 $breakpoints: (
 	'phone': 368px,
 	'tablet': 769px,
 	'desktop': 1440px,
 );
+
 @mixin mq($width, $type: min) {
 	@if map_has_key($breakpoints, $width) {
 		$width: map_get($breakpoints, $width);
+
 		@if $type == max {
 			$width: $width - 1px;
 		}
+
 		@media only screen and (#{$type}-width: $width) {
 			@content;
 		}
@@ -59,17 +61,21 @@ $fx-jf-cent: center;
 
 @mixin btn-blue($width, $height, $font-size){
 	@include font-400 ($font-size, #FFF);
+
 	background-color: $col-base-blue;
 	width: $width + px;
 	height: $height + px;
+
     @include flex(center, center)
 }
 
 @mixin btn-white($width, $height, $font-size){
 	@include font-400 ($font-size, $col-text-dark);
+
 	background-color: $col-text-light;
 	width: $width + px;
 	height: $height + px;
+
     @include flex(center, center)
 }
 

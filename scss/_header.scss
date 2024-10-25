@@ -9,6 +9,7 @@
 
 	&__navigation {
 		@include flex($fx-jf-sb, center);
+
 		width: 100%;
 		position: relative;
 	}
@@ -18,7 +19,9 @@
 	&__logo {
 		width: 97px;
 		height: 97px;
+
 		@include flex(center, center);
+
 		img {
 			width: 100%; 
 		}
@@ -29,7 +32,8 @@
 	&__list {
 		@include flex($fx-jf-sb, center);
 		@include font-400(16, $col-text-dark);
-		@include transformX();
+		@include transformX;
+
 		content: '';
 		position: absolute;
 		top: 0;
@@ -45,8 +49,9 @@
 		@include mq($mq-tablet, max) {
 			// @include flex-column;
 			width: 100%;
+
 			// background-color: $col-bg-body;
-			padding-left: 0px;
+			padding-left: 0;
 			position: fixed;
 			top: 0;
 			left: 200%;
@@ -59,6 +64,7 @@
 
 	&__item {
 		@include flex(center, center);
+
 		padding: 10px;
 		cursor: pointer;
 	}
@@ -97,7 +103,7 @@
 		left: 49.5%;
 	}
 
-	@media (hover: hover) or (min-width : 1024px) {
+	@media (hover: hover) or (width >= 1024px) {
 		&__item:hover > &__link::after {
 			width: 50%;
 			opacity: 1;
@@ -113,11 +119,13 @@
 
 	&__btn {
 		@include btn-blue(145, 47, 16);
+
 		border-radius: 10px;
 	}
 
 	&__burger {
 		display: none;
+
 		@include mq($mq-tablet, max) {
 			display: block;
 		}

@@ -1,6 +1,6 @@
 .work {
-
     margin-top: 215px;
+
     // .work__container
 
     &__container {
@@ -10,6 +10,7 @@
 
     &__title {
         @include font-upp-500(36, $col-text-dark);
+
         span{
             color: $col-base-blue;
         }
@@ -26,7 +27,6 @@
     &__person {
         position: relative;
         height: 100%;
-
         border: 1px solid red;
     }
 
@@ -74,11 +74,12 @@
 
     &__items {
         flex: 0 1 50%;
+
         @include flex($fx-jf-cent, $fx-jf-cent);
+
         padding: 40px 0;
         flex-wrap: wrap;
         gap: 20px;
-
         border: 3px solid greenyellow;
     }
 
@@ -86,13 +87,11 @@
 
     &__item {
         max-width: 300px;
-
-
         border: 1px solid red;
     }
 }
-.item {
 
+.item {
     // .item__title
 
     &__title {
@@ -103,8 +102,8 @@
     &__list {
     }
 }
-.list {
 
+.list {
     // .list__item
 
     &__item {

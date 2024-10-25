@@ -1,19 +1,14 @@
-@import './base/fonts.scss';
-@import './base/mixin.scss';
-@import './base/nullstyle.scss';
-@import './base/variables.scss';
-@import './base/ui.scss';
-
+@import './base/fonts';
+@import './base/mixin';
+@import './base/nullstyle';
+@import './base/variables';
+@import './base/ui';
 @import './header';
 @import './section/basic';
 @import './section/level';
 @import './section/work';
 
-
-body, html {}
-
-
-[class*="__container"] {
+[class*='__container'] {
     max-width: $width-container;
     margin: 0 auto;
 }
