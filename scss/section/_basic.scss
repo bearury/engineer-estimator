@@ -124,7 +124,7 @@
 		position: absolute;
 		bottom: 0;
 
-		@include transformX;
+		@include transform-x;
 	}
 
 	&__bg-fon {
@@ -132,7 +132,7 @@
 		position: absolute;
 		bottom: 0;
 
-		@include transformX;
+		@include transform-x;
 
 		width: 250px;
 		height: 370px;
@@ -166,7 +166,7 @@
         position: absolute;
         bottom: 10px;
 
-        @include transformX;
+        @include transform-x;
 
 	}
 

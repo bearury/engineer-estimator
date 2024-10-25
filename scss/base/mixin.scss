@@ -31,7 +31,7 @@ $calc-padding-right: padding-right;
 	#{$property}: calc(#{$to + px} + ($from - $to) * ((100vw - #{$endWidth + px}) / ($startWidth - $endWidth)));
 }
 
-@mixin transformX {
+@mixin transform-x {
 	left: 50%;
 	transform: translateX(-50%);
 }
