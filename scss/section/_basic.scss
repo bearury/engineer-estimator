@@ -140,21 +140,6 @@
 		backdrop-filter: blur(2px);
 	}
 
-	&__bg-ellipse {
-		width: 300px;
-		height: 390px;
-	}
-
-	&__bg-helmet {
-		content: '';
-		position: absolute;
-		top: 20px;
-		left: 70%;
-		width: 60px;
-		height: 60px;
-		z-index: -2;
-	}
-
 	&__shadow {
 		width: 691px;
 		height: 34px;

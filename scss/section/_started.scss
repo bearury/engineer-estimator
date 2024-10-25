@@ -1,0 +1,75 @@
+.started {
+    margin-top: 9rem;
+
+    // .started__primary
+
+    &__content {
+        padding: 90px;
+
+        @include flex($fx-sb, $fx-start);
+    }
+
+    &__primary {
+        flex: 0 0 50%;
+        padding-right: 2rem;
+    }
+
+    // .started__title
+
+    &__title {
+        @include font-500(50, $col-text-dark);
+
+        span {
+            color: $col-base-blue;
+        }
+    }
+
+    // .started__button
+
+    &__button {
+        margin-top: 2.5rem;
+        color: $col-green-transparency;
+        border-radius: 10px;
+        transition: all 0.5s ease 0s;
+
+        @include btn-blue(222, 53, 18);
+    }
+
+    // .started__secondary
+
+    &__secondary {
+    }
+
+    // .started__pyramid
+
+    &__pyramid {
+        @include flex-col($fx-cent, $fx-cent);
+    }
+
+    &__pyramid {
+        @include flex-col($fx-cent, $fx-cent);
+    }
+}
+
+.pyramid {
+    // .pyramid__layer
+
+    &__layer:first-child {
+        transform: translateY(0);
+    }
+
+    &__layer:nth-child(2) {
+        transform: translateY(20px);
+    }
+
+    &__layer:nth-child(3) {
+        // transform: translateY(10px);
+    }
+
+    &__layer:nth-child(4) {
+        transform: translateY(-10px);
+    }
+
+    &__layer {
+    }
+}

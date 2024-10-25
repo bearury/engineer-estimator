@@ -1,17 +1,12 @@
 .work {
     margin-top: 215px;
 
-    // .work__container
-
-    &__container {
-    }
-
     // .work__title
 
     &__title {
         @include font-upp-500(36, $col-text-dark);
 
-        span{
+        span {
             color: $col-base-blue;
         }
     }
@@ -19,7 +14,7 @@
     // .work__block
 
     &__block {
-        @include flex($fx-jf-sb, $fx-jf-cent);
+        @include flex($fx-sb, $fx-cent);
     }
 
     // .work__person
@@ -27,7 +22,6 @@
     &__person {
         position: relative;
         height: 100%;
-        border: 1px solid red;
     }
 
     // .work__image
@@ -35,77 +29,54 @@
     &__image {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
+        width: 18rem;
+        top: -50%;
+
+        @include transform-x;
     }
 
     // .work__bg
 
-    &__bg {
-
-    }
-
-    // .work__bg-image
-
-    &__bg-image {
-    }
-
-    // .work__bg-ellipse
-
     &__bg-ellipse {
+        min-width: 30rem;
     }
 
-    // .work__bg-helmet
+    &__bg-shadow {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 200%;
+        height: 50px;
+        border-radius: 50%;
+        background: rgb(0 0 0 / 17%);
+        filter: blur(10px);
 
-    &__bg-helmet {
-    }
-
-    // .work__bg-fon
-
-    &__bg-fon {
-    }
-
-    // .work__shadow
-
-    &__shadow {
+        @include transform-x;
     }
 
     // .work__items
 
     &__items {
         flex: 0 1 50%;
-
-        @include flex($fx-jf-cent, $fx-jf-cent);
-
         padding: 40px 0;
         flex-wrap: wrap;
         gap: 20px;
-        border: 3px solid greenyellow;
+
+        @include flex($fx-cent, $fx-cent);
     }
 
     // .work__item
 
     &__item {
+        padding: 45px 20px 35px;
+        box-shadow: 0 2px 80px 0 rgb(225 225 225 / 78%);
+        background-color: $col-text-light;
+        border-radius: 20px;
         max-width: 300px;
-        border: 1px solid red;
-    }
-}
+        max-height: fit-content;
+        transition: all 0.5s ease 0s;
 
-.item {
-    // .item__title
-
-    &__title {
-    }
-
-    // .item__list
-
-    &__list {
-    }
-}
-
-.list {
-    // .list__item
-
-    &__item {
+        @include flex-col($fx-sb, start);
     }
 }

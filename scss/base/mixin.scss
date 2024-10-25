@@ -42,8 +42,9 @@ $calc-padding-right: padding-right;
 	transform: translateY(-50%);
 }
 
-$fx-jf-sb: space-between;
-$fx-jf-cent: center;
+$fx-sb: space-between;
+$fx-cent: center;
+$fx-start: start;
 
 
 @mixin flex($justify, $align-items) {
