@@ -1,0 +1,101 @@
+.about-main {
+    // .about-main__conateiner
+
+    margin-top: 120px;
+
+    &__container {
+        position: relative;
+    }
+
+    // .about-main__photo
+
+    &__photo {
+        width: 11rem;
+        height: 11rem;
+        background-color: $col-base-blue;
+        border-radius: 100%;
+        position: absolute;
+        top: -5rem;
+
+        @include transform-x;
+    }
+
+    &__photo-bg {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        width: 11rem;
+        height: 12rem;
+        border-radius: 0 0 100% 100%;
+        transform: translateY(-0.9rem);
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            transform: translateY(-1.25rem);
+            z-index: 1;
+        }
+    }
+
+    // .about-main__content
+
+    &__content {
+        @include flex-col($fx-cent, $fx-cent);
+
+        border-radius: 3.75rem;
+        padding: 6.875rem;
+        box-shadow: 0 2px 80px 0 rgb(225 225 225 / 78%);
+    }
+
+    // .about-main__title
+
+    &__title {
+        @include font-400(24, $col-base-blue);
+    }
+
+    // .about-main__subtitle
+
+    &__subtitle {
+        @include font-500(36, $col-text-dark);
+
+        margin-top: 0.94rem;
+    }
+
+    // .about-main__expertise
+
+    &__expertise {
+        @include flex($fx-se, $fx-cent);
+
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    // .about-main__list
+
+    &__list {
+    }
+
+    // .about-main__list-item
+
+    &__list-item {
+    }
+}
+
+.expertise {
+    // .expertise__item
+
+    &__item {
+        @include flex-col($fx-cent, $fx-cent);
+        @include font-400(24, $col-text-dark);
+
+        gap: 0.94rem;
+    }
+
+    // .expertise__title
+
+    &__title {
+        @include font-500(36, $col-base-blue);
+    }
+}

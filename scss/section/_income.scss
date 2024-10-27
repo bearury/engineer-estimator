@@ -1,11 +1,4 @@
 .income {
-    // .income__container
-
-    &__container {
-    }
-
-    // .income__title
-
     &__title {
         @include font-upp-500(36, $col-text-dark);
 

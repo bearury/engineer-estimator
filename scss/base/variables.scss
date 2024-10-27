@@ -3,8 +3,16 @@ $col-base-blue: #378ad7;
 $col-text-dark: #000;
 $col-text-light: #fff;
 $col-text-medium: #727272;
+$col-text-secondary: rgb(0 0 0 / 64%);
 $col-bg-cards: rgb(223 223 223 / 78%);
 $col-green-transparency: rgb(0 0 0 / 25%);
 
 // dimensions
 $width-container: 1440px;
+
+// flex content
+$fx-se: space-evenly;
+$fx-sa: space-around;
+$fx-sb: space-between;
+$fx-cent: center;
+$fx-start: start;
