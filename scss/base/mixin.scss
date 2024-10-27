@@ -2,25 +2,24 @@ $mq-phone: 'phone';
 $mq-tablet: 'tablet';
 $mq-desktop: 'desktop';
 $breakpoints: (
-	'phone': 368px,
-	'tablet': 769px,
-	'desktop': 1440px,
+    'phone': 368px,
+    'tablet': 769px,
+    'desktop': 1440px,
 );
 
 @mixin mq($width, $type: min) {
-	@if map_has_key($breakpoints, $width) {
-		$width: map_get($breakpoints, $width);
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
 
-		@if $type == max {
-			$width: $width - 1px;
-		}
+        @if $type == max {
+            $width: $width - 1px;
+        }
 
-		@media only screen and (#{$type}-width: $width) {
-			@content;
-		}
-	}
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
 }
-
 
 $calc-font-size: font-size;
 $calc-line-height: line-height;
@@ -28,55 +27,58 @@ $calc-padding-left: padding-left;
 $calc-padding-right: padding-right;
 
 @mixin calc($property, $from, $to, $startWidth, $endWidth) {
-	#{$property}: calc(#{$to + px} + ($from - $to) * ((100vw - #{$endWidth + px}) / ($startWidth - $endWidth)));
+    #{$property}: calc(#{$to + px} + ($from - $to) * ((100vw - #{$endWidth + px}) / ($startWidth - $endWidth)));
 }
 
 @mixin transform-x {
-	left: 50%;
-	transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin transform-y {
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @mixin vertical-center {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 $fx-sb: space-between;
 $fx-cent: center;
 $fx-start: start;
 
-
 @mixin flex($justify, $align-items) {
-	display: flex;
-	align-items: $align-items;
-	justify-content: $justify;
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify;
 }
 
 @mixin flex-col($justify, $align-items) {
-	flex-direction: column;
-	display: flex;
-	align-items: $align-items;
-	justify-content: $justify;
+    flex-direction: column;
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify;
 }
 
-@mixin btn-blue($width, $height, $font-size){
-	@include font-400 ($font-size, #FFF);
+@mixin btn-blue($width, $height, $font-size) {
+    @include font-400($font-size, #fff);
 
-	background-color: $col-base-blue;
-	width: $width + px;
-	height: $height + px;
+    background-color: $col-base-blue;
+    width: $width + px;
+    height: $height + px;
 
-    @include flex(center, center)
+    @include flex(center, center);
 }
 
-@mixin btn-white($width, $height, $font-size){
-	@include font-400 ($font-size, $col-text-dark);
+@mixin btn-white($width, $height, $font-size) {
+    @include font-400($font-size, $col-text-dark);
 
-	background-color: $col-text-light;
-	width: $width + px;
-	height: $height + px;
+    background-color: $col-text-light;
+    width: $width + px;
+    height: $height + px;
 
-    @include flex(center, center)
+    @include flex(center, center);
 }
-

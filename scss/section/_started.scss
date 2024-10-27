@@ -4,9 +4,9 @@
     // .started__primary
 
     &__content {
-        padding: 90px;
+        padding: 0 90px;
 
-        @include flex($fx-sb, $fx-start);
+        @include flex($fx-sb, $fx-cent);
     }
 
     &__primary {
@@ -14,7 +14,6 @@
         padding-right: 2rem;
     }
 
-    // .started__title
 
     &__title {
         @include font-500(50, $col-text-dark);
@@ -24,26 +23,13 @@
         }
     }
 
-    // .started__button
-
     &__button {
-        margin-top: 2.5rem;
+        margin-top: 6.5rem;
         color: $col-green-transparency;
-        border-radius: 10px;
+        border-radius: .625rem;
         transition: all 0.5s ease 0s;
 
         @include btn-blue(222, 53, 18);
-    }
-
-    // .started__secondary
-
-    &__secondary {
-    }
-
-    // .started__pyramid
-
-    &__pyramid {
-        @include flex-col($fx-cent, $fx-cent);
     }
 
     &__pyramid {
@@ -52,24 +38,83 @@
 }
 
 .pyramid {
-    // .pyramid__layer
+    &__item {
+        position: relative;
 
-    &__layer:first-child {
-        transform: translateY(0);
+        @include flex-col($fx-cent, $fx-cent);
     }
 
-    &__layer:nth-child(2) {
-        transform: translateY(20px);
+    &__general-layer {
+        position: relative;
+        width: 100%;
+        height: 100%;
     }
 
-    &__layer:nth-child(3) {
-        // transform: translateY(10px);
+    &__item:first-child > &__layer:nth-child(1) {
+        transform: translateY(1.25rem);
+        z-index: 2;
     }
 
-    &__layer:nth-child(4) {
-        transform: translateY(-10px);
+    &__item:first-child > &__layer:nth-child(2) {
+        transform: translateY(2.1875rem);
+        z-index: 2;
     }
 
-    &__layer {
+    &__item:first-child > &__layer:nth-child(3) {
+        transform: translateY(.9375rem);
+        z-index: 1;
+    }
+
+    &__item:nth-child(2) {
+        transform: translateY(-1.125rem);
+        z-index: -1;
+    }
+
+    &__item:nth-child(2) > &__general-layer {
+        transform: translateY(-0.6875rem) !important;
+    }
+
+    &__item:nth-child(3) {
+        transform: translateY(-2.5rem);
+        z-index: -2;
+    }
+
+    &__item:nth-child(3) > &__general-layer {
+        transform: translateY(-0.5rem) !important;
+    }
+
+    &__item:nth-child(4) {
+        transform: translateY(-3.4375rem);
+        z-index: -4;
+    }
+
+    &__item:nth-child(4) > &__general-layer {
+        transform: translateY(-0.3125rem) !important;
+    }
+
+    &__item:nth-child(5) {
+        transform: translateY(-4rem);
+        z-index: -5;
+    }
+
+    &__item:nth-child(5) > &__general-layer {
+        transform: translateY(-0.25rem) !important;
+    }
+
+    &__item:not(:first-child) > &__layer:nth-child(2) {
+        transform: translateY(-0.625rem);
+    }
+
+    &__text {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: fit-content;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
+        color: $col-text-light;
+
+        @include font-400(18, $col-text-light);
     }
 }
